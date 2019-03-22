@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@rnhooks/dimensions": {
+      "signature": "0c5e30ebeb2a4df3d0096103aaeabbb5",
+      "file": true
+    }
+  }
+}
