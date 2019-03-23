@@ -32,11 +32,11 @@ function App() {
 
 
 ### Output
-| Name  | Default  | Type | Description |
+| Name  | Type  | Default | Description |
 | :------------ |---------------:| :---------------| :-----|
 | width | number | `null` | Width of the Screen |
 | height | number | `null` | Height of the Screen |
-| fontScale | `null` | number | Font Scale of the Screen |
+| fontScale | number | `null` | Font Scale of the Screen |
 | scale | number | `null` | Scale of the Screen |
 
 ## Contribution
