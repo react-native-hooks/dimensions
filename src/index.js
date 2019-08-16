@@ -18,7 +18,7 @@ export default (type) => {
   useEffect(() => {
     const currentDimensions = Dimensions.get(type);
     setDimensions(currentDimensions);
-  }, []);
+  }, [type]);
 
   useEffect(() => {
     function dimensionsChange(params) {
@@ -29,7 +29,7 @@ export default (type) => {
     return () => {
       Dimensions.removeEventListener('change', dimensionsChange);
     };
-  }, []);
+  }, [type]);
 
   return dimensions;
 };
