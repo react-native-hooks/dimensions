@@ -13,7 +13,7 @@ export default (type) => {
     return initialDimensions;
   }
 
-  const [dimensions, setDimensions] = useState(initialDimensions);
+  const [dimensions, setDimensions] = useState(Dimensions.get(type));
 
   useEffect(() => {
     const currentDimensions = Dimensions.get(type);
