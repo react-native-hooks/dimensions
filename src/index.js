@@ -13,12 +13,12 @@ export default (type) => {
     return initialDimensions;
   }
 
-  const [dimensions, setDimensions] = useState(initialDimensions);
+  const [dimensions, setDimensions] = useState(Dimensions.get(type));
 
   useEffect(() => {
     const currentDimensions = Dimensions.get(type);
     setDimensions(currentDimensions);
-  }, []);
+  }, [type]);
 
   useEffect(() => {
     function dimensionsChange(params) {
@@ -29,7 +29,7 @@ export default (type) => {
     return () => {
       Dimensions.removeEventListener('change', dimensionsChange);
     };
-  }, []);
+  }, [type]);
 
   return dimensions;
 };
