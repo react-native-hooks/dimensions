@@ -1,6 +1,6 @@
 {
   "name": "@rnhooks/dimensions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Native hook for Dimensions",
   "main": "dist/react-native-hooks-dimensions.cjs.js",
   "jsnext:main": "dist/react-native-hooks-dimensions.esm.js",
